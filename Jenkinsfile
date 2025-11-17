@@ -62,7 +62,7 @@ pipeline {
 
           steps {
             withSonarQubeEnv('sonarserver') {
-               sh '''${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=vprofile \
+               sh '''${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=vprofile-repo1 \
                    -Dsonar.projectName=vprofile-repo \
                    -Dsonar.projectVersion=1.0 \
                    -Dsonar.sources=src/ \
